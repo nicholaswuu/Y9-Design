@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="General.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+	.topnav{
+		background-color: #e69138;
+	}
+	.button{
+		background-color: #e69138;
+	}
+	.button:hover{
+		background-color: #FCB060;
+	}
+	.active{
+		background-color: #e69138;
+	}
+	.parallax1{
+		background-image: url("https://imgs.waste-management-world.com/m/2374_1_1280-0-0_.jpg");
+		background-position-y: -80px;
+	}
+	.title{
+		text-shadow: 0px 9px 4px #793E00;
+	}
+	.image{
+		padding: 40px;
+		padding-top: 20px;
+		padding-right: 120px;
+	}
+	.info{
+		border-color: #e69138;
+		color: #e69138;
+	}
+	.info:hover{
+		background-color: #e69138;
+	}
+	.facts{
+		background-color: #D3791A;
+	}
+	.parallax2{
+		background-image: url("https://www.undp.org/content/dam/undp/sdg/covers/sdg-cover-12.jpg");
+		top: -20px;
+        height: 830px;
+	}
+	.searchbar{
+		color: #e69138;
+	}
+</style>
+</head>
+<body>
+
+<div class = "topnav">
+  <button class = "button" id = "dropdown" onclick="ddown()">Goal 12: Responsible Consumption and Production &#8744;</button>
+  <div class = "ddown" id = "content" style = "display: none;">
+  	<a href = "Goal8.html">Goal 8: Decent Work and Economic Growth</a>
+  	<div class = "active">Goal 12: Responsible Consumption and Production</div>
+  	<a href = "Commonlink.html">Goal 8 + Goal 12: Common Link</a>
+  	<a href = "Solution.html">What You Can Do</a>
+  </div>
+</div>
+
+<div class = "parallax1"><div class = "title">Goal 12</div></div>
+
+
+<div class = "quote">
+	<img src="https://www.pinclipart.com/picdir/big/353-3532362_12-responsible-consumption-and-production-responsible-consumption-and.png" height = 250px class = "image">
+	“Ensure sustainable consumption and production patterns”
+	<br><br>
+	-- UN SDG Goal 12
+	<button class="info" onclick = "info()">INFO</button>
+</div>
+
+<div class = "cardbg" id = "cardbg">
+	<div class = "card" id = "card">
+		<span class = "x" onclick="infoout()">&times;</span>
+		<b class = "cardtitle">More Info</b><br><br>
+		&emsp;&emsp;Sustainable consumption and production is about promoting resource and energy efficiency, sustainable infrastructure, and providing access to basic services, green and decent jobs and a better quality of life for all. Its implementation helps to achieve overall development plans, reduce future economic, environmental and social costs, strengthen economic competitiveness and reduce poverty.<br><br>
+
+		&emsp;&emsp;At the current time, material consumption of natural resources is increasing, particularly within Eastern Asia. Countries are also continuing to address challenges regarding air, water and soil pollution.<br><br>
+
+		&emsp;&emsp;Since sustainable consumption and production aims at “doing more and better with less,” net welfare gains from economic activities can increase by reducing resource use, degradation and pollution along the whole life cycle, while increasing quality of life. There also needs to be significant focus on operating on supply chain, involving everyone from producer to final consumer. This includes educating consumers on sustainable consumption and lifestyles, providing them with adequate information through standards and labels and engaging in sustainable public procurement, among others.<br><br>
+
+		<b class="cardtitle">The Targets</b><br><br>
+		<b style = "font-size: 25px">12.1 -</b> Implement the 10-year framework of programmes on sustainable consumption and production, all countries taking action, with developed countries taking the lead, taking into account the development and capabilities of developing countries<br><br>
+
+		<b style = "font-size: 25px">12.2 -</b> By 2030, achieve the sustainable management and efficient use of natural resources<br><br>
+
+		<b style = "font-size: 25px">12.3 -</b> By 2030, halve per capita global food waste at the retail and consumer levels and reduce food losses along production and supply chains, including post-harvest losses<br><br>
+
+		<b style = "font-size: 25px">12.4 -</b> By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment<br><br>
+
+		<b style = "font-size: 25px">12.5 -</b> By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse<br><br>
+
+		<b style = "font-size: 25px">12.6 -</b> Encourage companies, especially large and transnational companies, to adopt sustainable practices and to integrate sustainability information into their reporting cycle<br><br>
+
+		<b style = "font-size: 25px">12.7 -</b> Promote public procurement practices that are sustainable, in accordance with national policies and priorities<br><br>
+
+		<b style = "font-size: 25px">12.8 -</b> By 2030, ensure that people everywhere have the relevant information and awareness for sustainable development and lifestyles in harmony with nature<br><br>
+
+		<b style = "font-size: 25px">12.A -</b> Support developing countries to strengthen their scientific and technological capacity to move towards more sustainable patterns of consumption and production<br><br>
+
+		<b style = "font-size: 25px">12.B -</b> Develop and implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs and promotes local culture and products<br><br>
+
+		<b style = "font-size: 25px">12.C -</b> Rationalize inefficient fossil-fuel subsidies that encourage wasteful consumption by removing market distortions, in accordance with national circumstances, including by restructuring taxation and phasing out those harmful subsidies, where they exist, to reflect their environmental impacts, taking fully into account the specific needs and conditions of developing countries and minimizing the possible adverse impacts on their development in a manner that protects the poor and the affected communities<br>
+		<button class = "info" style = "font-size: 25px; width: 120px;padding: 5px" onclick = "infoout()">CLOSE</button><br><br>
+	</div>
+</div>
+
+<div class = "facts">
+	<div style = "padding-left: 40px">FACTS AND FIGURES</div>
+	<div class = "factlist" style = "padding-left: 50px; position: relative">
+	<canvas id = "ctx" height = "550" width = "590" style = "position: relative; float: left; left: -50px"></canvas>
+	<b class = "emphasis">83 billion tonnes </b><br> increase in resource consumption from 1900 to 2017<br><br>
+	<b class = "emphasis">THREE planets needed</b><br>to sustain resource consumption for a population of 9.6 billion<br><br>
+	<b class = "emphasis">1/3 of ALL food produced</b><br> is wasted each year, equivalent to $1 trillion
+	</div>
+</div>
+
+<div class = "searchbar">
+	<b>Find your Country:</b>
+      <input type="text" placeholder="Country..." name="search" class = "search" id = "searchbar">
+      <button type="submit" class = "info" style = "float:none; font-size: 25px" onclick = "searchvalue()">SEARCH</button>
+</div>
+<div class = "searchresult" id = "searchdiv" style = "display: none; font-weight: normal; font-size: 20px"></div>
+
+<div class = "parallax2"><div class="title" style = "padding-top: 300px">Why is this important?</div></div>
+	<div class="card2">
+		<div class = "card2content">
+		<b>What is the goal here?</b><br><br>
+		To ensure sustainable consumption and production patterns<br><br>
+		<b>Why?</b><br><br>
+		Economic and social progress over the last century has been accompanied by environmental degradation that is endangering the very systems on which our future development and very survival depend. If we don’t act to change our consumption and production patterns, we will cause irreversible damage to our environment.<br><br>
+		<b>What are some of the current consumption and production patterns that need to change?</b><br><br>
+		There are many aspects of consumption that with simple changes can have a big impact on society as a whole. For example, about one third of the food produced for human consumption each year is lost or wasted. When it comes to consumers, households consume 29 per cent of global energy and contribute to 21 per cent of resultant CO2 emissions. Water pollution is also a pressing issue that needs a sustainable solution. We are polluting water faster than nature can recycle and purify water in rivers and lakes. Urgent action is needed to ensure that current material needs do not lead to over-extraction of resources and further degradation of the environment.<br><br>
+		<b>How can I help as a business?</b><br><br>
+		It’s in businesses’ interest to find new solutions that enable sustainable consumption and production patterns. A better understanding of environmental and social impacts of products and services is needed, both of product life cycles and how these are affected by use within lifestyles. Identifying “hot spots” within the value chain where interventions have the greatest potential to improve the environmental and social impact of the system as a whole is a crucial first step. Businesses can also use their innovative power to design solutions that can both enable and inspire individuals to lead more sustainable lifestyles, reducing impacts and improving well-being<br><br>
+		<b>How can I help as a consumer?</b><br><br>
+		There are two main ways to help:<br><br>
+		1. Reducing your waste<br>
+		2. Being thoughtful about what you buy and choosing a sustainable option whenever possible.<br><br>
+		Reducing our waste can be done in many ways, from ensuring you don’t throw away food to reducing your consumption of plastic—one of the main pollutants of the ocean. Carrying a reusable bag, refusing to use plastic straws, and recycling plastic bottles are good ways to do your part every day. Making informed purchases about what we’re buying also helps. For example, the textile industry today is the second largest polluter of clean water after agriculture, and many fashion companies exploit textile workers in the developing world. If you can buy from sustainable and local sources you can make a difference as well as exercising pressure on businesses to adopt sustainable practices.<br><br><br>
+
+		Source: <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/2016/08/12.pdf" target="_blank">https://www.un.org/sustainabledevelopment/wp-content/uploads/2016/08/12.pdf</a>
+	</div>
+</div>
+</body>
+
+<script src = "General.js"></script>
+<script>
+var data = [263385693.7, 267788016.1, 271478121.6, 285364129.2, 301898677.4, 315845686.4, 330188763.1, 344365476, 350197458, 352420229.7, 373303791.9, 392455642.3, 390919511.8, 402882325.7, 409037825.2, 417306579.9, 427511463.8, 437859803.3]
+
+var canvas = document.getElementById("ctx");
+var ctx = canvas.getContext("2d");
+	for(i=200; i<460; i=i+50){
+		ctx.font = "15px Roboto";
+		ctx.fillStyle = "#ffffff";
+		ctx.fillText(i, 33, 610-1.1*i);
+		ctx.lineWidth = 2;
+		ctx.strokeStyle = "#EF8D26";
+		ctx.beginPath();
+		ctx.moveTo(580, 605-1.1*i);
+		ctx.lineTo(67, 605-1.1*i);
+		ctx.stroke();
+	}
+	for(i=0; i<18; i++){
+		ctx.font = "15px Roboto";
+		ctx.fillStyle = "#ffffff";
+		ctx.fillText(i, i*30+63, 450);
+		ctx.lineWidth = 2;
+		ctx.strokeStyle = "#ffffff";
+		ctx.beginPath();
+		ctx.moveTo(i*30+67, 605-1.1*(data[i]/1000000));
+		ctx.lineTo((i+1)*30+68, 605-1.1*(data[i+1]/1000000));
+		ctx.stroke();
+	}
+
+ctx.font = "25px Roboto";
+ctx.fillStyle = "#ffffff"
+ctx.fillText("World Average Material Footprint", 0, 20);
+ctx.font = "20px Roboto";
+ctx.fillStyle = "#FFD9B1";
+ctx.fillText("All Raw Materials", 0, 55);
+ctx.fillText("Percent increase (2000-2017): 66.2%", 0, 540);
+ctx.font = "18px Roboto";
+ctx.fillText("Year (since 2000)", 260, 485);
+
+ctx.strokeStyle = "#FFD6AA";
+ctx.lineWidth = 2;
+ctx.beginPath();
+ctx.moveTo(67, 430);
+ctx.lineTo(67, 80);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(587, 430);
+ctx.lineTo(67, 430);
+ctx.stroke();
+
+ctx.translate(-227, 400);
+ctx.rotate(-Math.PI / 2);
+ctx.fillText("Resource Footprint (million tonnes)", 0, 240);
+
+//Search bar
+var countries = ["Tunisia", "Turkey", "Turkmenistan", "Uganda", "Ukraine", "Egypt", "United Kingdom", "Tanzania", "United States of America", "Burkina Faso", "Uruguay", "Uzbekistan", "Venezuela", "Samoa", "Yemen", "Zambia", "Singapore", "Slovakia", "Vietnam", "Slovenia", "Somalia", "South Africa", "Zimbabwe", "Spain", "South Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria", "Tajikistan", "Thailand", "Togo", "Trinidad and Tobago", "United Arab Emirates", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Belize", "Brunei", "Bulgaria", "Myanmar", "Burundi", "Belarus", "Cambodia", "Cameroon", "Canada", "Cabo Verde", "Central African Republic", "Lesotho", "Latvia", "Liberia", "Libya", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Mauritania", "Mauritius", "Mexico", "Mongolia", "Afghanistan", "Albania", "Algeria", "Angola", "Antigua and Barbuda", "Azerbaijan", "Argentina", "Australia", "Austria", "Bahamas", "Bahrain", "Bangladesh", "Armenia", "Barbados", "Belgium", "Bhutan", "Dominican Republic", "Moldova", "Ecuador", "El Salvador", "Eritrea", "Estonia", "Fiji", "Finland", "France", "Djibouti", "Gabon", "Georgia", "Montenegro", "Morocco", "Mozambique", "Oman", "Namibia", "Nepal", "Netherlands", "Vanuatu", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Qatar", "Gambia", "Romania", "Russia", "Rwanda", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Seychelles", "Sierra Leone", "Germany", "Ghana", "Greece", "Guatemala", "Guinea", "Guyana", "Haiti", "Honduras", "Hungary", "Norway", "Pakistan", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Sri Lanka", "Chad", "Chile", "China", "Colombia", "Congo", "Democratic Republic of the Congo", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Benin", "Denmark", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Côte d'Ivoire", "Jamaica", "Japan", "Kazakhstan", "Jordan", "Kenya", "North Korea", "South Korea", "Kuwait", "Kyrgyzstan", "Laos", "Lebanon"]
+
+var values = ["70087680", "1291545000", "124336800", "106739900", "531955900", "462480900", "1475594000", "78764380", "9912468000", "75561600", "120202000", "197445400", "219655900", "1652718", "32636860", "62102120", "416957700", "245948800", "956590000", "46558060", "36190860", "477308100", "10067360", "1021286000", "107482100", "7911437", "13183460", "239680900", "261576600", "58777970", "33307470", "1028975000", "19533810", "7494912", "455435300", "45436500", "29299520", "78839690", "2758833000", "2798506", "8181748", "89393430", "79858450", "17185480", "956090.3", "57152680", "46269460", "1258147000", "4502245", "11843620", "25855550", "45082750", "7590649", "24088160", "103309800", "60176930", "21488900", "22568510", "714894800", "6369170", "84428380", "11190400", "10969310", "26386250", "1086226000", "42617860", "42559140", "32761970", "123929900", "95676990", "1357910", "61789030", "504545700", "1050746000", "276854300", "7502458", "21538310", "387747800", "24046150", "3152758", "266376200", "8401626", "64581470", "4121209", "162843200", "33843540", "31716230", "38687290", "6378013", "199198100", "1425417000", "2257335", "9055632", "35611990", "13792090", "130871500", "58800890", "47881180", "18287180", "79169310", "455409500", "2182655", "114472100", "24055530", "63928090", "453638200", "34214600", "5005466", "331030300", "1422368000", "38249140", "1276482", "388930600", "38646350", "2241828", "48003950", "1830200000", "102082700", "279159500", "56106010", "28725550", "87074200", "12294860", "31613450", "143277300", "198165300", "626975300", "30517410", "21296200", "73214530", "286983600", "455523300", "657703500", "171271000", "79659480", "23102590", "303345600", "27670520000", "475064000", "11581210", "162708600", "37714420", "52962710", "78751130", "23488570", "48412800", "140101900", "10618780", "6135949000", "1643574000", "1119547000", "102399200", "94894170", "178255100", "1182258000", "22551210", "21932570", "3138514000", "325216100", "62574100", "148258400", "25768160", "1346076000", "189423200", "48093690", "50568020", "89866000"]
+
+function searchvalue(){
+	var search = document.getElementById("searchbar").value.toLowerCase();
+	for(i=0; i<countries.length; i++){
+		if(countries[i].toLowerCase() === search){
+		document.getElementById("searchdiv").style.display = "block"
+		document.getElementById("searchdiv").innerHTML = "In 2017, " + countries[i] + " consumed "+ values[i]+ " tonnes of raw materials.";
+		document.getElementById("searchbar").value=""
+		return;
+		}
+	}
+	alert("The country you entered did not have any data! Please try again!");
+	document.getElementById("searchbar").value=""
+}
+
+</script>
+</html>

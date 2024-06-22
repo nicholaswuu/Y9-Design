@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="General.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+
+	.topnav{
+		background-color: #DF5300;
+	}
+	.button{
+		background-color: #DF5300;
+	}
+	.button:hover{
+		background-color: #FF660B;
+	}
+	.active{
+		background-color: #DF5300;
+	}
+	.parallax1{
+		background-image: url("https://www.centralcariboodisposal.ca/assets/img/page-headers/landfill.jpg");
+		background-position-y: -75px;
+	}
+	.title{
+		text-shadow: 0px 5px 10px #883300;
+	}
+	.info{
+		border-color: #DF5300;
+		background-color: #DF5300;
+		color:white;
+		text-decoration: none;
+	}
+	.info:hover{
+		background-color: white;
+		border-color: white;
+		color:#DF5300;
+	}
+	.facts{
+		background-color: #BD4A05;
+	}
+	.parallax2{
+		background-image: url("https://physicsworld.com/wp-content/uploads/2018/11/renewable-energy-montage-705444748-Shutterstock_FotoIdee.jpg");
+		top: 50px;
+        height: 760px;
+	}
+
+</style>
+</head>
+<body>
+
+<div class = "topnav">
+  <button class = "button" id = "dropdown" onclick="ddown()">Goal 8 + Goal 12: Common Link &#8744;</button>
+  <div class = "ddown" id = "content" style = "display: none;">
+  	<a href = "Goal8.html">Goal 8: Decent Work and Economic Growth</a>
+  	<a href = "Goal12.html">Goal 12: Responsible Consumption and Production</a>
+  	<div class = "active">Goal 8 + Goal 12: Common Link</div>
+  	<a href = "Solution.html">What You Can Do</a>
+  </div>
+</div>
+
+<div class = "parallax1"><div class = "title">Common Link</div></div>
+
+
+<div class = "quote">
+	<img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/08/E-Inverted-Icons_WEB-08-1024x1024.png" height = 650px class = image style = "top: -225px; left: -70px; padding: 0px;">
+	<b>Indicator 8.4:</b> Improve global <b style = "color: #980000">resource efficiency</b> in consumption and production and endeavour to decouple economic growth from environmental degradation
+	<br>
+</div>
+<div class = "quote">
+	<img src="https://www.pinclipart.com/picdir/big/353-3532362_12-responsible-consumption-and-production-responsible-consumption-and.png" height = 200px class = image style = "float: right;">
+	<b>Indicator 12.2:</b> By 2030, achieve the sustainable management and <b style = "color: #e69138">efficient</b> use of natural resources<br><br>
+</div>
+
+<div class = "facts">
+	<div style = "padding-left: 40px">RESOURCE EFFICIENCY</div>
+	<div class = "factlist" style = "padding-left: 50px; position: relative">
+	<canvas id = "ctx" height = "550" width = "500" style = "position: relative; float: left;"></canvas>
+	<b class = "emphasis">7% higher GDP</b><br> from resource efficiency in G20 countries<br><br>
+	<b class = "emphasis">USD $2 trillion</b><br> added to global economy from resource efficiency annually by 2050<br><br>
+	<b class = "emphasis">72% of the worlds resources</b><br> are consumed by the billion richest people<br>
+
+	<a href = "https://www.unenvironment.org/explore-topics/resource-efficiency" target="_blank"><button class="info">INFO</button></a>
+	</div>
+</div>
+
+<div class = "parallax2"><div class = "title" style = "padding-top: 300px">Why is this important?</div></div>
+<div class="card2">
+	<div class = "card2content">
+	The key to answering that question lies in recognising that humanity's economic activities are dependant on the global ecosystem – in particular its capacity to provide resources and to absorb pollution and waste. Crucially, the Earth is a closed material system and that shapes the possibilities for economic growth.<br><br>
+
+	Of course, for some non-renewable resources, including many metals and minerals, security of supply isn't yet a concern; for others, such as fossil fuels, high-tech metals and land, availability is already a problem.<br><br>
+
+	Natural systems can also be seen as a form of capital. If we maintain our natural capital it will provide hugely valuable renewable resources and ecosystem services: generating food and fibres, regulating the climate, purifying water and so on. But over-exploiting our natural capital, for example by taking too many resources or emitting excessive pollutants, will reduce its ability to provide further goods and services.<br><br>
+
+	<b>Natural limits</b><br><br>
+	Put simply, humanity can't keep taking ever more resources from the environment and generating ever more waste. Once the flow of resources through the economy has reached its maximum sustainable limit (and many would argue that we’ve already passed that point for some resources), the only way to maintain economic growth in the long run is to become more resource efficient – finding ways to generate greater returns from the same amount of resources.<br><br>
+
+	Resource efficiency isn’t only valuable because it is essential for sustained economic growth. Reducing environmental impacts also contributes to well-being derived outside the market economy, notably the quality of life that comes from living in a healthy, attractive environment. Moreover, promoting resource efficiency can increase the competitiveness of industry, create jobs, stimulate innovation, boost sectors such as recycling and resource recovery, and help ensure secure supplies of key resources.<br><br><br>
+	Source: <a href="https://www.eea.europa.eu/themes/waste/resource-efficiency/why-is-resource-efficiency-important" target="_blank">https://www.eea.europa.eu/themes/waste/resource-efficiency/why-is-resource-efficiency-important</a>
+	</div>
+</div>
+</body>
+
+<script src = "General.js"></script>
+<script>
+var canvas = document.getElementById("ctx");
+var ctx = canvas.getContext("2d");
+ctx.font = "25px Roboto";
+ctx.fillStyle = "#ffffff";
+ctx.fillText("Opportunities for Resource Savings", 0, 20);
+ctx.font = "20px Roboto";
+ctx.fillStyle = "#FFB78C";
+ctx.fillText("USD $ billion (2010)", 0, 55);
+ctx.fillText("Total: 3.57 Trillion USD", 0, 520);
+ctx.beginPath();
+ctx.lineWidth = 80
+ctx.arc(200, 270, 140, 0, 2 * Math.PI);
+ctx.strokeStyle = "#AAAAAA";
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(200, 270, 140, 0, 1.4212885154 * Math.PI);
+ctx.strokeStyle = "#7EEAFF";
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(200, 270, 140, 0, 1.3422969188 * Math.PI);
+ctx.strokeStyle = "#ffcf46";
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(200, 270, 140, 0, 0.4453781513 * Math.PI);
+ctx.strokeStyle = "#f78024";
+ctx.stroke();
+ctx.fillStyle = "#AAAAAA";
+ctx.fillText("Other: 892", 320, 100);
+ctx.fillStyle = "#7EEAFF";
+ctx.fillText("Water: 282", 10, 100);
+ctx.fillStyle = "#ffcf46";
+ctx.fillText("Energy: 1,601", 0, 460);
+ctx.fillStyle = "#f78024";
+ctx.fillText("Food: 795", 320, 450);
+</script>
+</html>
